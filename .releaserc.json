@@ -14,7 +14,7 @@
 			"prerelease": true
 		}
 	],
-	"repositoryUrl": "https://github.com/Rebackk-Team/pocketbase-adapter.git",
+	"repositoryUrl": "https://github.com/RebackkHQ/pocketbase-adapter.git",
 	"plugins": [
 		"@semantic-release/commit-analyzer",
 		"@semantic-release/release-notes-generator",

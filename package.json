@@ -19,7 +19,7 @@
   "homepage": "https://docs.rebackk.xyz/docs/pocketbase-adapter",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rebackk-Team/pocketbase-adapter.git"
+    "url": "https://github.com/RebackkHQ/pocketbase-adapter.git"
   },
   "scripts": {
     "build": "node --disable-warning=ExperimentalWarning --experimental-strip-types  ./scripts/build.ts",
