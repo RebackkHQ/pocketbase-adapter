@@ -1,0 +1,13 @@
+build/
+node_modules/
+coverage/
+.DS_Store
+.env
+pocketbase/pocketbase
+pocketbase/pocketbase.zip
+pocketbase/pb_data/
+pocketbase/pocketbase.pid
+bin
+.DS_Store
+.vscode/
+.env

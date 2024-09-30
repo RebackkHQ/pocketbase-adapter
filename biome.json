@@ -1,0 +1,17 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"files": {
+		"ignore": ["build", "node_modules", "coverage", "package.json"]
+	},
+	"linter": {
+		"rules": {
+			"all": false,
+			"style": {
+				"noParameterAssign": "off"
+			},
+			"correctness": {
+				"noNodejsModules": "off"
+			}
+		}
+	}
+}

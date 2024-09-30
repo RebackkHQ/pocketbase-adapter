@@ -1,0 +1,67 @@
+{
+  "name": "@rebackk/pocketbase-adapter",
+  "version": "0.0.0-development",
+  "type": "module",
+  "exports": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "license": "MIT",
+  "engines": {
+    "node": "^22.8.0",
+    "npm": "^10.8.2"
+  },
+  "volta": {
+    "node": "22.8.0",
+    "npm": "10.8.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://docs.rebackk.xyz/docs/pocketbase-adapter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rebackk-Team/pocketbase-adapter.git"
+  },
+  "scripts": {
+    "build": "node --disable-warning=ExperimentalWarning --experimental-strip-types  ./scripts/build.ts",
+    "clean": "rimraf build coverage",
+    "type:check": "tsc --noEmit",
+    "lint": "biome check . --fix --unsafe",
+    "lint:check": "biome ci .",
+    "test": "node --disable-warning=ExperimentalWarning --experimental-strip-types ./scripts/test.ts test",
+    "test:watch": "node --disable-warning=ExperimentalWarning --experimental-strip-types ./scripts/test.ts test:watch",
+    "test:coverage": "node --disable-warning=ExperimentalWarning --experimental-strip-types ./scripts/test.ts test:coverage",
+    "test:setup": "node --disable-warning=ExperimentalWarning --experimental-strip-types ./scripts/test-setup.ts",
+    "spell:check": "cspell \"{README.md,CODE_OF_CONDUCT.md,CONTRIBUTING.md,.github/*.md,src/**/*.ts}\"",
+    "cz": "cz",
+    "semantic-release": "semantic-release --ci true"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.2",
+    "@biomejs/cli-linux-x64": "latest",
+	"@microsoft/api-extractor": "^7.47.9",
+    "@ryansonshine/commitizen": "^4.2.8",
+    "@ryansonshine/cz-conventional-changelog": "^3.3.4",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/github": "^10.3.5",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.1",
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^22.7.3",
+    "@types/prompts": "^2.4.9",
+    "c8": "^10.1.2",
+    "child_process": "^1.0.2",
+    "cspell": "^8.14.4",
+    "dotenv": "^16.4.5",
+    "esbuild": "^0.23.1",
+    "prompts": "^2.4.2",
+    "rimraf": "^6.0.1",
+    "semantic-release": "^24.1.1",
+    "slugify": "^1.6.6",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@auth/core": "^0.35.0",
+    "pocketbase": "^0.21.5"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+coverage/
+pocketbase/
+bin
+.DS_Store
+.vscode/
+.env
+.env.local
+.env.development.local
